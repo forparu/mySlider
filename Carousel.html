@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel</title>
+	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="script/carousel.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div class="PRRContainer" style="height: 300px;">
+    <div class="PRRSliderList">
+        <img src="images/img_main_5.jpg" class="PRRImg"/>
+        <img src="images/img_main_1.jpg" class="PRRImg"/>
+        <img src="images/img_main_2.jpg" class="PRRImg"/>
+        <img src="images/img_main_3.jpg" class="PRRImg"/>
+        <img src="images/img_main_4.jpg" class="PRRImg"/>
+        <img src="images/img_main_5.jpg" class="PRRImg"/>
+        <img src="images/img_main_1.jpg" class="PRRImg"/>       
+    </div>
+    <div class="PRRButtons">
+    </div>
+</div>
+    <script type="text/javascript"> 
+    new carousel({
+        container : $('.PRRContainer'),
+        list : $('.PRRSliderList'),
+        buttons : $('.PRRButtons'),
+        animateTime :　0.5,
+        interval : 3000,
+    }); 
+    </script>
+</body>
+</html>
